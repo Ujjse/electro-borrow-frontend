@@ -1,5 +1,6 @@
 /* Center the login container */
 body, html {
+<<<<<<< Updated upstream
     height: 100%;
     margin: 0;
     display: flex;
@@ -91,3 +92,89 @@ body, html {
   
   
   
+=======
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa; /* Light background for the page */
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+  max-width: 900px; /* Limit the container width */
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+}
+
+/* Image section */
+.login-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #f8f9fa; /* Light gray background for the image section */
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; /* No rounded corners */
+}
+
+/* Form section */
+.login-frame {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8f9fa; /* Light gray background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Form input fields */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%; /* Make the input fields full width */
+  height: calc(2.25rem + 2px); /* Increase height of the input fields */
+  padding: 0.5rem; /* Increase padding for better appearance */
+}
+
+/* Error message styling */
+.text-danger {
+  font-size: 0.875rem; /* Smaller font size for error messages */
+  color: red; /* Red color for error messages */
+}
+
+/* Green button styling */
+.btn-custom {
+  background-color: #064749; /* Green color */
+  color: #ffffff; /* Ensures the text is visible */
+  border: none;
+  padding: 0.75rem; /* Padding for better appearance */
+  font-size: 1rem; /* Font size */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for the green button */
+.btn-custom:hover {
+  background-color: #04603e; /* Darker green */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Sign-up link styling */
+.login-link {
+  color: #064749;
+  cursor: pointer;
+  text-decoration: underline;
+}
+>>>>>>> Stashed changes

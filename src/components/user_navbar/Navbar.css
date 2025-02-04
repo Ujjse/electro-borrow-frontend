@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* General Navbar Styles */
 .navbar {
     background-color: #064749;
@@ -86,3 +87,164 @@
     color: #064749;
   }
   
+=======
+/* Navbar styling */
+.navbar {
+  background-color: #064749; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  height: 60px; /* Ensure the height is defined */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style-type: none;
+}
+
+.navbar-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar-user {
+  font-size: 16px;
+  color: white;
+  position: relative;
+}
+
+.navbar-user .user-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  min-width: 150px;
+  z-index: 2000;
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.dropdown-item:hover {
+  background-color: #064749;
+  color: white;
+}
+
+.logout-item {
+  cursor: pointer;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+  color: #007bff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dialog box styles */
+.logout-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Dialog overlay to cover the entire screen */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Dialog box styling */
+.dialog-box {
+  background-color: black;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.dialog-box h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Dialog actions - ensure consistent button size */
+.btn {
+  display: inline-block; /* Ensure button respects width */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 120px; /* Consistent width */
+  text-align: center;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.confirm-btn {
+  background-color: #064749;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #053d3b;
+}
+
+.cancel-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #e74c3c;
+}
+>>>>>>> Stashed changes

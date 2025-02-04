@@ -1,0 +1,83 @@
+/* General container styling */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  /* Title */
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Favorite item */
+  .favorite-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .favorite-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product image */
+  .favorite-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Text content */
+  .favorite-item div {
+    flex-grow: 1;
+    padding-left: 20px;
+  }
+  
+  .favorite-item h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .favorite-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Remove button */
+  .favorite-item .btn-danger {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favorite-item .btn-danger:hover {
+    background-color: #e74c3c;
+  }
+  
+  /* Empty favorites message */
+  .empty-favorites {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 40px;
+  }
+  

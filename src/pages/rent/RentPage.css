@@ -1,0 +1,42 @@
+/* Styles for the RentPage component */
+
+.rent-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  .rent-title {
+    position: sticky; /* Makes the title stay at the top */
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    padding: 16px;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .rent-content {
+    flex: 1; /* Allows the content to take up the remaining space */
+    overflow-y: auto; /* Makes the content scrollable */
+    padding: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  .faq-item p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  

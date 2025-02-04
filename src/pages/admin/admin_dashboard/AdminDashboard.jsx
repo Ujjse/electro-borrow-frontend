@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -25,7 +30,11 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     if (!token) {
+<<<<<<< Updated upstream
       navigate('/login');
+=======
+      navigate('/');
+>>>>>>> Stashed changes
     } else {
       fetchProducts();
     }
@@ -83,13 +92,20 @@ const AdminDashboard = () => {
       .then((res) => {
         if (res.status === 201) {
           toast.success(res.data.message);
+<<<<<<< Updated upstream
           setIsModalOpen(false);
+=======
+          setIsModalOpen(false); // Close the modal after successful addition
+>>>>>>> Stashed changes
           fetchProducts();
           setProductName('');
           setProductPrice('');
           setProductCategory('');
           setProductDescription('');
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
           setProductImage('');
           setPreviewImage('');
         }
@@ -119,7 +135,12 @@ const AdminDashboard = () => {
 
   return (
     <>
+<<<<<<< Updated upstream
      
+=======
+      {/* Admin Navbar */}
+      <AdminNavbar />
+>>>>>>> Stashed changes
 
       {/* Main Content */}
       <div className="container mt-4">
@@ -171,8 +192,11 @@ const AdminDashboard = () => {
                     <option value="Mobile">Mobile</option>
                     <option value="Camera">Camera</option>
                     <option value="Drone">Drone</option>
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
                   </select>
                   <label className="mt-3">Product Price</label>
                   <input
@@ -182,8 +206,11 @@ const AdminDashboard = () => {
                     placeholder="Enter price"
                     required
                   />
+<<<<<<< Updated upstream
                   
           
+=======
+>>>>>>> Stashed changes
                   <label className="mt-3">Product Image</label>
                   <input
                     onChange={handleImage}
@@ -209,7 +236,10 @@ const AdminDashboard = () => {
                       style={{ maxHeight: '150px' }}
                     />
                   )}
+<<<<<<< Updated upstream
                   
+=======
+>>>>>>> Stashed changes
                 </div>
                 <div className="modal-footer">
                   <button
@@ -229,7 +259,11 @@ const AdminDashboard = () => {
         </div>
 
         {/* Product Table */}
+<<<<<<< Updated upstream
         <div className="mt-4">
+=======
+        <div className="table-container mt-4">
+>>>>>>> Stashed changes
           {loading ? (
             <p>Loading products...</p>
           ) : error ? (
@@ -260,7 +294,10 @@ const AdminDashboard = () => {
                     <td>{singleProduct.productName}</td>
                     <td>{singleProduct.productCategory}</td>
                     <td>${singleProduct.productPrice}</td>
+<<<<<<< Updated upstream
                     
+=======
+>>>>>>> Stashed changes
                     <td>{singleProduct.productDescription}</td>
                     <td>
                       <Link

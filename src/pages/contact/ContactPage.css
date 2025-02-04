@@ -1,0 +1,42 @@
+.contact-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* You can adjust the max width based on your preference */
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .contact-info strong {
+    font-weight: bold;
+  }
+  

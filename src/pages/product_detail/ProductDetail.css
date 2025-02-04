@@ -1,0 +1,80 @@
+.card {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px; /* space between cards */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-title.text-danger {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e74c3c;
+}
+
+.card-text {
+  color: #777;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.icon {
+  font-size: 24px; /* Adjust icon size */
+  cursor: pointer;
+  color: #064749; /* Icon color */
+  transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: #f44336; /* Change color on hover */
+}
+
+.heart-icon {
+  color: #f44336; /* Red color for heart (favourite) */
+}
+
+.cart-icon {
+  color: #064749; /* Green color for cart */
+}
+
+/* Product Detail Image */
+.product-image {
+  width: 100%;
+  height: 400px; /* Adjust height based on your design */
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.btn{
+  color: #064749;
+}
